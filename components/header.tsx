@@ -12,6 +12,13 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
+          <img
+            alt="BOORA Transport Logo"
+            className="h-8 w-auto"
+            height="40"
+            src="/logo.png"
+            width="40"
+          />
           <span className="text-xl font-bold text-blue-800">BOORA TRANSPORT</span>
         </Link>
         <nav className="hidden md:flex gap-6">
