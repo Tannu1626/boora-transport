@@ -4,13 +4,15 @@ import { Inter } from "next/font/google"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "BOORA TRANSPORT - Reliable Logistics Solutions",
   description: "Professional transport and logistics services for businesses and individuals.",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -25,6 +27,8 @@ export default function RootLayout({
           <div className="relative flex min-h-screen flex-col">
             <Header />
             <main className="flex-1">{children}</main>
+            <Analytics />
+            <SpeedInsights />
             <Footer />
           </div>
         </ThemeProvider>
