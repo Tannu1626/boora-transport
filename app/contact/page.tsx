@@ -9,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
 import { toast } from "@/components/ui/use-toast"
+import Image from "next/image"
 
 export default function ContactPage() {
   const [loading, setLoading] = useState(false)
@@ -190,9 +191,10 @@ export default function ContactPage() {
 
             <div className="mt-6 border rounded-lg overflow-hidden h-[300px] w-full">
               {/* In a real app, this would be a Google Maps embed */}
-              <div className="bg-gray-200 w-full h-full flex items-center justify-center">
+              {/* <div className="bg-gray-200 w-full h-full flex items-center justify-center">
                 <p className="text-gray-500">Map Placeholder</p>
-              </div>
+              </div> */}
+              <Image src="/images/map.png" alt="Map" width={600} height={600} />
             </div>
           </div>
         </div>
