@@ -22,7 +22,7 @@ export default function HomeRelocationPage() {
 
         <div className="aspect-video overflow-hidden rounded-lg">
           <img
-            src="/placeholder.svg?height=600&width=1200"
+            src="/images/homerelocation.webp"
             alt="Home Relocation Service"
             className="object-cover w-full h-full"
           />

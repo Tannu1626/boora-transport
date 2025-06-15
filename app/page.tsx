@@ -4,6 +4,7 @@ import { BookingForm } from "@/components/booking-form"
 import { ServiceCard } from "@/components/service-card"
 import { TestimonialCard } from "@/components/testimonial-card"
 import { Truck, Home, Sofa, Package } from "lucide-react"
+import Image from "next/image"
 
 export default function HomePage() {
   return (
@@ -38,11 +39,11 @@ export default function HomePage() {
               </div>
             </div>
             <div className="mx-auto lg:ml-auto">
-              <img
+              <Image
                 alt="Transport Van"
                 className="rounded-xl object-cover"
                 height="400"
-                src="/image.png"
+                src="/images/homesection.webp"
                 style={{
                   aspectRatio: "600/400",
                   objectFit: "cover",
@@ -221,19 +222,19 @@ export default function HomePage() {
               name="Sarah Johnson"
               location="London"
               quote="BOORA TRANSPORT made my house move completely stress-free. The team was professional, careful with my belongings, and finished ahead of schedule!"
-              image="/placeholder.svg?height=100&width=100"
+              image="/images/client2.webp"
             />
             <TestimonialCard
               name="James Wilson"
               location="Manchester"
               quote="I needed urgent furniture removal after a last-minute sale. BOORA responded quickly and handled everything with care. Excellent service!"
-              image="/placeholder.svg?height=100&width=100"
+              image="/images/client1.webp"
             />
             <TestimonialCard
               name="Emma Thompson"
               location="Birmingham"
               quote="I use BOORA regularly for parcel deliveries for my small business. Always on time, always professional. Highly recommended!"
-              image="/placeholder.svg?height=100&width=100"
+              image="/images/client3.webp"
             />
           </div>
         </div>

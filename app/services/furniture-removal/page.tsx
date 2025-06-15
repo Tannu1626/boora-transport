@@ -22,7 +22,7 @@ export default function FurnitureRemovalPage() {
 
         <div className="aspect-video overflow-hidden rounded-lg">
           <img
-            src="/placeholder.svg?height=600&width=1200"
+            src="/images/furnitureremoval.webp"
             alt="Furniture Removal Service"
             className="object-cover w-full h-full"
           />
