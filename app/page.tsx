@@ -5,6 +5,7 @@ import { ServiceCard } from "@/components/service-card"
 import { TestimonialCard } from "@/components/testimonial-card"
 import { Truck, Home, Sofa, Package } from "lucide-react"
 import Image from "next/image"
+import TrustpilotWidget from "@/components/TrustpilotWidget"
 
 export default function HomePage() {
   return (
@@ -43,7 +44,7 @@ export default function HomePage() {
                 alt="Transport Van"
                 className="rounded-xl object-cover"
                 height="400"
-                src="/images/homesection.webp"
+                src="/images/homesection.jpeg"
                 style={{
                   aspectRatio: "600/400",
                   objectFit: "cover",
@@ -54,6 +55,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+        {/* <TrustpilotWidget /> */}
 
       {/* Services Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-white">

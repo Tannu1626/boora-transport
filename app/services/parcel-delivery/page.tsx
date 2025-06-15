@@ -20,7 +20,7 @@ export default function ParcelDeliveryPage() {
 
         <div className="aspect-video overflow-hidden rounded-lg">
           <img
-            src="/images/parceldelivery.webp"
+            src="/images/parceldelivery.png"
             alt="Parcel Delivery Service"
             className="object-cover w-full h-full"
           />

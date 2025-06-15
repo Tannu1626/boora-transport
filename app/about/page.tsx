@@ -38,7 +38,7 @@ export default function AboutPage() {
             </div>
             <div className="rounded-lg overflow-hidden">
               <img
-                src="/images/about1.webp"
+                src="/images/about1.jpeg"
                 alt="BOORA TRANSPORT History"
                 className="w-full h-auto object-cover"
               />
@@ -48,7 +48,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1 rounded-lg overflow-hidden">
               <img
-                src="/images/about2.webp"
+                src="/images/about2.jpeg"
                 alt="BOORA TRANSPORT Mission"
                 className="w-full h-auto object-cover"
               />

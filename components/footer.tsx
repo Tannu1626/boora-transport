@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react"
+import TrustpilotWidget from "./TrustpilotWidget"
 
 export function Footer() {
   return (
@@ -105,6 +106,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
+             <TrustpilotWidget />
         <div className="mt-8 border-t border-gray-700 pt-8 text-center text-sm text-gray-300">
           <p>© {new Date().getFullYear()} BOORA TRANSPORT. All rights reserved.</p>
         </div>
