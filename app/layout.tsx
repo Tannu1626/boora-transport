@@ -6,6 +6,7 @@ import { Footer } from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import WhatsAppButton from "@/components/WhatsAppButton"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -27,6 +28,7 @@ export default function RootLayout({
           <div className="relative flex min-h-screen flex-col">
             <Header />
             <main className="flex-1">{children}</main>
+            <WhatsAppButton />
             <Analytics />
             <SpeedInsights />
             <Footer />
