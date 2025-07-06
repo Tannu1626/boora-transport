@@ -11,9 +11,8 @@ import WhatsAppButton from "@/components/WhatsAppButton"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "BOORA TRANSPORT - Reliable Logistics Solutions",
-  description: "Professional transport and logistics services for businesses and individuals.",
-  generator: 'v0.dev'
+  title: "House & Furniture Removal in London | Boora Transport & Logistics Ltd",
+  description: "Boora Transport provides insured home removals, furniture delivery & parcel transport across London. Save 15% standard & get 20% off luxury item handling.",
 }
 
 export default function RootLayout({
