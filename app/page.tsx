@@ -32,7 +32,7 @@ export default function HomePage() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-white text-white hover:bg-white hover:text-blue-800"
+                    className="border-white text-blue-800 hover:bg-white/80 hover:text-blue-800"
                   >
                     Our Services
                   </Button>
@@ -102,7 +102,7 @@ export default function HomePage() {
           <div className="flex flex-col items-center justify-center space-y-6 text-center mb-16">
             <div className="space-y-4">
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-800 text-sm font-medium">
-                📍 Service Areas
+                Service Areas
               </div>
               <h2 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl bg-gradient-to-r from-blue-800 via-blue-600 to-indigo-600 bg-clip-text text-transparent">
                 Areas We Serve in London
@@ -402,7 +402,7 @@ export default function HomePage() {
           <div className="flex flex-col items-center justify-center space-y-6 text-center mb-16">
             <div className="space-y-4">
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-medium">
-                ⭐ Customer Reviews
+                Customer Reviews
               </div>
               <h2 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl bg-gradient-to-r from-blue-800 via-blue-600 to-indigo-600 bg-clip-text text-transparent">
                 Customer Testimonials
