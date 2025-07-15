@@ -13,6 +13,7 @@ interface BookingData {
   date?: Date | null
   houseType: string
   time?: string | null
+  plan?: string | null
   details?: string | null
 }
 

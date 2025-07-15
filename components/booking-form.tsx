@@ -34,7 +34,7 @@ export function BookingForm({ initialService = null }: BookingFormProps) {
     setLoading(true)
 
     const formData = new FormData(event.currentTarget)
-    
+
     const data = {
       name: formData.get('name') as string,
       email: formData.get('email') as string,
@@ -47,6 +47,7 @@ export function BookingForm({ initialService = null }: BookingFormProps) {
       date: formData.get('date') as string,
       houseType: formData.get('houseType') as string,
       time: formData.get('time') as string,
+      plan: formData.get('plan') as string,
       details: formData.get('details') as string,
     }
 
@@ -68,7 +69,7 @@ export function BookingForm({ initialService = null }: BookingFormProps) {
         description: "We'll contact you shortly to confirm your booking.",
       })
       alert("Booking request submitted. We'll contact you shortly to confirm your booking.")
-      
+
       // Reset form
       event.currentTarget.reset()
     } catch (error) {
@@ -135,7 +136,7 @@ export function BookingForm({ initialService = null }: BookingFormProps) {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-2">
           <Label>Preferred Date</Label>
           <Popover>
@@ -174,6 +175,9 @@ export function BookingForm({ initialService = null }: BookingFormProps) {
             </SelectContent>
           </Select>
         </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-2">
           <Label htmlFor="time">Preferred Time</Label>
           <Select name="time">
@@ -184,6 +188,20 @@ export function BookingForm({ initialService = null }: BookingFormProps) {
               <SelectItem value="morning">Morning (8:00 - 12:00)</SelectItem>
               <SelectItem value="afternoon">Afternoon (12:00 - 16:00)</SelectItem>
               <SelectItem value="evening">Evening (16:00 - 20:00)</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
+        {/* plans Basic, Standard, Premium */}
+        <div className="space-y-2">
+          <Label htmlFor="plan">Plan</Label>
+          <Select name="plan">
+            <SelectTrigger id="plan">
+              <SelectValue placeholder="Select plan" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="Basic">Basic</SelectItem>
+              <SelectItem value="Standard">Standard</SelectItem>
+              <SelectItem value="Premium">Premium</SelectItem>
             </SelectContent>
           </Select>
         </div>

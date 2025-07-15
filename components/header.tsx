@@ -29,6 +29,9 @@ export function Header() {
           <Link href="/services" className="text-sm font-medium hover:text-blue-800 hover:underline underline-offset-4">
             Services
           </Link>
+          <Link href="/price" className="text-sm font-medium hover:text-blue-800 hover:underline underline-offset-4">
+            Pricing
+          </Link>
           <Link href="/about" className="text-sm font-medium hover:text-blue-800 hover:underline underline-offset-4">
             About Us
           </Link>
@@ -56,6 +59,12 @@ export function Header() {
               className="text-sm font-medium hover:text-blue-800 hover:underline underline-offset-4"
             >
               Services
+            </Link>
+            <Link
+              href="/price"
+              className="text-sm font-medium hover:text-blue-800 hover:underline underline-offset-4"
+            >
+              Pricing
             </Link>
             <Link href="/about" className="text-sm font-medium hover:text-blue-800 hover:underline underline-offset-4">
               About Us

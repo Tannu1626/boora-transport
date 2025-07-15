@@ -10,6 +10,7 @@ interface BookingData {
   date?: Date | null
   houseType: string
   time?: string | null
+  plan?: string | null
   details?: string | null
 }
 
@@ -98,6 +99,11 @@ export function getCustomerBookingConfirmationEmail(booking: BookingData) {
                 <div class="detail-row">
                   <span class="label">Preferred Time:</span>
                   <span>${booking.time ? booking.time.replace(/\b\w/g, l => l.toUpperCase()) : 'Not specified'}</span>
+                </div>
+
+                <div class="detail-row">
+                  <span class="label">Plan:</span>
+                  <span>${booking.plan ? booking.plan.replace(/\b\w/g, l => l.toUpperCase()) : 'Not specified'}</span>
                 </div>
                 
                 ${booking.details ? `
@@ -265,6 +271,11 @@ export function getAdminBookingNotificationEmail(booking: BookingData) {
                 <div class="detail-row">
                   <span class="label">Preferred Time:</span>
                   <span>${booking.time ? booking.time.replace(/\b\w/g, l => l.toUpperCase()) : 'Not specified'}</span>
+                </div>
+
+                <div class="detail-row">
+                  <span class="label">Plan:</span>
+                  <span>${booking.plan ? booking.plan.replace(/\b\w/g, l => l.toUpperCase()) : 'Not specified'}</span>
                 </div>
                 
                 ${booking.details ? `

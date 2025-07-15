@@ -16,6 +16,7 @@ const bookingSchema = z.object({
   date: z.string().optional().nullable(),
   houseType: z.string().min(1, 'House type is required'),
   time: z.string().optional().nullable(),
+  plan: z.string().optional().nullable(),
   details: z.string().optional().nullable(),
 })
 
@@ -46,6 +47,7 @@ export async function POST(request: NextRequest) {
         date: bookingDate,
         houseType: validatedData.houseType,
         time: validatedData.time,
+        plan: validatedData.plan,
         details: validatedData.details,
       },
     })
@@ -64,6 +66,7 @@ export async function POST(request: NextRequest) {
         date: booking.date,
         houseType: booking.houseType,
         time: booking.time,
+        plan: booking.plan,
         details: booking.details,
       })
     } catch (emailError) {
