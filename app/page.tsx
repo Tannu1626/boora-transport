@@ -28,13 +28,13 @@ export default function HomePage() {
                     Book Now
                   </Button>
                 </Link>
-                <Link href="/services">
+                <Link href="/price">
                   <Button
                     size="lg"
                     variant="outline"
                     className="border-white text-blue-800 hover:bg-white/80 hover:text-blue-800"
                   >
-                    Our Services
+                    Our Price
                   </Button>
                 </Link>
               </div>

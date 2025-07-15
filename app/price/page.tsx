@@ -10,7 +10,7 @@ const PricingPage = () => {
             <div className="container px-4 mx-auto max-w-7xl">
                 <div className="mx-auto max-w-3xl text-center mb-12">
                     <h1 className="mb-4 text-4xl font-bold tracking-tight text-blue-800 sm:text-5xl">
-                        Transport Services Pricing
+                        Removal Service Pricing
                     </h1>
                     <p className="text-xl text-gray-600">
                         Choose the perfect transport solution that fits your needs with our flexible pricing options.
